@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Report</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Report</h1>
+        <p>
+            Enter a location below to get the current weather
+            conditions for that location
+        </p>
+    </header>
+    <main>
+        <section class="search-box">
+            <input type="text" id="location" placeholder="Enter the location" />
+            <button id="search-button">Search</button>
+        </section>
+        <div id="loading" style="display: none;">loading</div>
+        <div id="error" style="display: none;">Error loading Weather data</div>
+        <section
+         class="weather-display"
+         id="weather-display"
+            style="display: none;"
+            >
+            <div class="temp-display"><span id="temperature">--</span>°c</div>
+            <div class="condition-display"><span id="condition">--</span></div> 
+        
+            <div class="condition-info"> <span id="wind-speed">Wind speed: --</span>
+            <span id="humidity">Humditity: --</span>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <p>Made by Tarun kumar Bommu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
